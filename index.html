@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -36,7 +37,7 @@
           <button class="btn">Join Us</button>
         </a>
       </div>
-      <picture class="header__image"
+      <picture class="header__image" data-aos="zoom-in-up"
         ><img src="../img/banner@2x.webp" alt="" class="header__image-loop"
       /></picture>
     </header>
@@ -45,11 +46,16 @@
       <!--About us page-->
       <section class="about">
         <div class="about__left-col">
-          <img src="../img/about.jpg" alt="our cloud image" />
+          <div class="composition" data-aos="fade-up">
+            <img src="../img/about.jpg" alt="our cloud image" class="composition__photo--p1">
+            <img src="/img/about12.jpg" alt="our cloud image2" class="composition__photo--p2">
+            <img src="/img/background3.jpg" alt="our cloud image3" class="composition__photo--p3">
+          </div>
         </div>
+
         <div class="about__right-col">
           <div class="about__text">
-            <h1>Exciting Cloud Platform</h1>
+            <h2>Exciting Cloud Platform</h2>
             <span class="square"></span>
             <p>
               We are best in version control service, Lorem ipsum dolor sit amet
@@ -61,17 +67,17 @@
               <span class="line-2"></span><br />
               <span class="line-3"></span>
             </div>
-            <h2>
+            <h3>
               "Chioce of Scure and safe cloud is not attained by chanve, it must
               be sought for with ardor, diligent and attended to with high
               degree of commitment"
-            </h2>
-            <h3>----Tiaco; top notch</h3>
+            </h3>
+            <h5>----Tiaco; top notch</h3>
           </div>
         </div>
       </section>
       <!--features-->
-      <section class="features">
+      <section class="features" data-aos="fade-up">
         <div class="features__row">
           <div class="features__row-col">
             <img src="/../img/bulb.png" alt="cloud anywhere" />
@@ -137,7 +143,7 @@
             </p>
 
             <div class="u-center-text u-margin-top">
-              <a href="#" class="feedback-btn">Read all stories &rarr;</a>
+              <a href="#" class="feedback-btn">Read More &rarr;</a>
             </div>
           </div>
         </div>
@@ -166,7 +172,7 @@
             </p>
 
             <div class="u-center-text u-margin-top">
-              <a href="#" class="feedback-btn">Read all stories &rarr;</a>
+              <a href="#" class="feedback-btn">Read More &rarr;</a>
             </div>
           </div>
         </div>
@@ -204,29 +210,29 @@
 
     <!--footer-->
     <section class="footer">
-      <div class="container footer__row">
+      <div class="container footer__row footer__text">
         <hr />
         <div class="footer__left-col">
           <div class="footer__links">
-            <div class="footer__link-title">
+            <div class="footer__text-title">
               <h5>Product</h5>
               <small>our plan</small> <br />
               <small>Free Trial</small>
             </div>
 
-            <div class="footer__link-title">
+            <div class="footer__text-title">
               <h5>About us</h5>
               <small>Download our Cli</small> <br />
               <small>FAQs</small>
             </div>
 
-            <div class="footer__link-title">
+            <div class="footer__text-title">
               <h5>support</h5>
               <small>Feature</small> <br />
               <small>Contact us</small>
             </div>
 
-            <div class="footer__link-title">
+            <div class="footer__text-title">
               <h5>Explore</h5>
               <small>Find a nonprofit</small><br />
               <small>Coporate Solutions</small>
@@ -237,7 +243,7 @@
           <div class="footer__info">
             <div class="copyright-text">
               <small class="">support@tiaco.org</small><br />
-              <small class="">&copy; 2023 by Samuel Adeyemi</small>
+              <small class="">copyright &copy; 2023 by Samuel Adeyemi</small>
             </div>
 
             <div class="footer__logo">
@@ -247,5 +253,9 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
