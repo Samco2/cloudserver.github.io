@@ -65,6 +65,12 @@
             border-radius: 0 important;
             font-size: 1rem;
             font-weight:900;
+
+
+            @include respond(phone) { // width <600px
+                padding: 1rem 2rem; 
+                border-radius: 1rem;
+            }
         }
     }
 
