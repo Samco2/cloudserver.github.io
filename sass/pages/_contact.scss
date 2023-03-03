@@ -1,0 +1,14 @@
+.contact {
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__left-col, &__right-col {
+        flex-basis: 50%;
+    }
+
+    &__right-col img {
+        width: 100%;
+    }
+}

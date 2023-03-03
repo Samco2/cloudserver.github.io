@@ -1,0 +1,118 @@
+.composition {
+    display: flex;
+    flex-basis: 50%;
+    position: relative;
+    
+    &__photo {
+        width: 40%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 0;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+       
+
+        &--p1 {
+            left: 17rem;
+            top: -4rem;
+            position: relative;
+
+            @include respond(tab-land) {
+                left: 12rem;
+                top: -4rem;
+            } 
+
+            @include respond(tab-port) {
+                left: 6rem;
+                top: -1rem;
+            } 
+
+            @include respond(phone) {
+                left: 6rem;
+                top: -4rem;
+            } 
+
+
+            &:hover {
+                outline: .2rem solid $color-white;
+                transform: scale(1.05);
+                box-shadow: 0 2.5rem 4rem rgba($color-black, 0.6);
+                z-index: 20;
+                border-radius: 2rem;
+            }
+        }
+
+       &--p2 {
+            left: 8rem;
+            top: -2rem;
+            position: relative;
+            
+            @include respond(tab-land) {
+                left: 9rem;
+                top: -2rem;
+            } 
+
+            @include respond(tab-port) {
+                left: 3rem;
+                top: 1rem;
+            } 
+
+            @include respond(phone) {
+                left: -18rem;
+                top: 7rem;
+                display: none;
+            } 
+
+            &:hover {
+                outline: 0.2rem solid $color-white;
+                transform: scale(1.05);
+                box-shadow: 0 2.5rem 4rem rgba($color-black, 0.6);
+                z-index: 20;
+                border-radius: 2rem;
+            }
+            
+        }
+        &--p3 {
+            left: -20rem;
+            top: 7rem;
+            position: relative;
+
+            @include respond(tab-land) {
+                left: -16rem;
+                top: 3rem;
+            } 
+
+            @include respond(tab-port) {
+                left: -20rem;
+                top: 6rem;
+            } 
+
+            @include respond(phone) {
+                left: 1rem;
+                top: -1rem;
+            } 
+
+
+            &:hover {
+                outline: 0.2rem solid $color-white;
+                transform: scale(1.05);
+                box-shadow: 0 2.5rem 4rem rgba($color-black, 0.6);
+                z-index: 20;
+                border-radius: 2rem;
+                
+            }
+        }
+
+        &:hover {
+            outline: .2rem solid $color-white;
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.6);
+            z-index: 20;
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(1.2)
+    }
+}

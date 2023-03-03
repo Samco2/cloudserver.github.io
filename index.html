@@ -23,12 +23,36 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__box">
-        <img src="img/tiaco.jpg" alt="Tiaco Logo" class="header__box-logo" />
+    <!--Navigation-->
+    <nav class="nav">
+      <div class="nav__box">
+        <img src="img/tiaco.jpg" alt="Tiaco Logo" class="nav__box-logo" />
       </div>
+      <label for="" class="logo">Tiaco</label>
+        <ul class="nav__list">
+          <li class="nav__li"><a class="active" href="#" >Home</a></li>
+          <li class="nav__li"><a href="#">About</a></li>
+          <li class="nav__li"><a href="#">Services</a></li>
+          <li class="nav__li"><a href="#">Contact</a></li>
+          <li class="nav__li"><a href="#">Feedback</a></li>
+        </ul>
+
+
+        <label id="icon" >
+          <i for="navi-toggle" class="nav__button">
+            <span class="nav__icon">&nbsp;</span>
+          </i>
+        </label>
+    </nav>
+    
+
+
+
+    <header class="header">
+      
 
       <div class="header__text">
         <h1 class="header__text-major">secure and safe clouding</h1>
@@ -38,7 +62,19 @@
         </a>
       </div>
       <picture class="header__image" data-aos="zoom-in-up"
-        ><img src="../img/banner@2x.webp" alt="" class="header__image-loop"
+        >
+        <source
+        type="image/webp"
+        srcset="img/banner.webp 1x, img/banner@2x.webp 2x"
+      />
+      <source
+      type="image/png"
+      srcset="img/banner.png 1x, img/banner@2x.png 2x"
+    />
+        
+        
+        
+        <img src="../img/banner@2x.webp" class="header__image-loop"
       /></picture>
     </header>
 
@@ -47,9 +83,10 @@
       <section class="about">
         <div class="about__left-col">
           <div class="composition" data-aos="fade-up">
-            <img src="../img/about.jpg" alt="our cloud image" class="composition__photo--p1">
-            <img src="/img/about12.jpg" alt="our cloud image2" class="composition__photo--p2">
-            <img src="/img/background3.jpg" alt="our cloud image3" class="composition__photo--p3">
+        <img src="../img/abt@2x.jpg" alt="our cloud image" class="composition__photo--p1">
+            
+            <img src="/img/about12@2x.jpg" alt="our cloud image2" class="composition__photo--p2">
+            <img src="/img/about@2x.jpg" alt="our cloud image3" class="composition__photo--p3">
           </div>
         </div>
 
@@ -125,11 +162,15 @@
       <div class="row">
         <div class="feedback">
           <figure class="feedback__shape">
+
+
             <img
-              src="img/background2.jpg"
-              alt="Person on a tour"
-              class="feedback__img"
-            />
+            srcset="img/background1x.jpg 300w, img/background2x.jpg 1000w"
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Marry Janet photo"
+            class="feedback__img"
+            src="img/background2x.jpg"
+          />
             <figcaption class="feedback__caption">Mary Janet</figcaption>
           </figure>
           <div class="feedback__text">
@@ -152,11 +193,18 @@
       <div class="row">
         <div class="feedback">
           <figure class="feedback__shape">
+
+
             <img
-              src="img/background1.jpg"
-              alt="Person on a tour"
-              class="feedback__img"
-            />
+            srcset="img/background1@1x.webp 300w, img/background2@2x.jpg 1000w"
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+            alt="Dr. Rheson Raphael photo"
+            class="feedback__img"
+            src="img/background2@2x.jpg"
+          />
+
+          
+
             <figcaption class="feedback__caption">
               Dr. Rheson Raphael
             </figcaption>
@@ -187,11 +235,11 @@
             Sign Up to join our <br />
             cloud community
           </h3>
-          <form>
+          <form class="form">
             <input type="text" placeholder="Enter Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="password" />
-            <div class="btn-box">
+            <div class="form__btn-box">
               <button class="btn">Sign Up</button>
               <button class="btn">Free Trial</button>
             </div>
@@ -253,6 +301,14 @@
         </div>
       </div>
     </section>
+    <!--Social icon-->
+    <div class="social-icons">
+      <img src="img/facebook.png">
+      <img src="img/instagram.png">
+      <img src="img/twitter.png">
+      <img src="img/linkedin.png">
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

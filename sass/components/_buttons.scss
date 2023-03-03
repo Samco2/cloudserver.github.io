@@ -1,0 +1,72 @@
+/* Button */
+.btn {
+    background: $color-accent;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight:600;
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    border:0;
+    border-radius: 3rem;
+    position: relative;
+
+
+
+    &:hover {
+        background-color: $color-primary-hover;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+        border-radius: 2rem;
+    }
+    &:active {
+        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px); 
+        border-radius: 2rem;
+
+    }
+}
+
+.feedback-btn {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color:$color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        
+    }
+
+    &:hover {
+        background-color: $color-primary-hover;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+        border-radius: 2rem;
+    }
+    &:active {
+        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px); 
+        border-radius: 2rem;
+
+    }
+}
+
+.form {
+    //position: relative;
+
+    &__btn-box {
+        button  {
+            flex-basis: 48%;
+            max-width: 17rem;
+            //padding:1.8rem 0;
+            border-radius: 0 important;
+            font-size: 1rem;
+            font-weight:900;
+        }
+    }
+
+} 
+
