@@ -1,0 +1,114 @@
+.header {
+    height: 100vh;
+    background-image:linear-gradient(to right bottom, $color-back, $color-primary), url(../img/background1x.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    position: relative;
+
+
+    @media (min-resolution: 192dpi)  and (min-width: 37.5em), // 1em =16px (600/16 =37.5em
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) { // 2000/16
+        background-image:linear-gradient(to right bottom, $color-back, $color-primary), url(../img/background2x.jpg);
+}
+
+    
+    @include respond(big-desktop) {
+        
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    } 
+    @include respond(phone) { // width <600px
+        clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    }
+
+    &__box {
+        position: absolute;
+        top:1rem;
+        left: 2rem;
+
+
+        &-logo {
+            height: 4.5rem;
+            border-radius: 20%;
+        }
+    }
+    
+    &__text{
+        position: absolute;
+        width:50vw;
+        top:25rem;
+        left: 2rem;
+        text-align: center;
+        color: $color-white;
+
+        @include respond(phone) { // width <600px
+           font-size: 40%;
+           top:9.4em;
+           width:40vw;
+        }
+
+        
+        &-major {
+            display: block;
+            text-transform: uppercase;
+            font-size: 7rem;
+            font-weight: 700;
+            color: $color-white;
+        }
+        
+        
+        &-minor {
+            display: block;
+            font-size:3rem;
+            font-weight:300;
+            
+        }
+    
+    }
+   
+    
+    &__text-btn {
+        position: absolute;
+        left: 50vw;
+    } 
+
+
+    &__image {
+        position: absolute;
+        top:0.1rem;
+        right: 2rem;
+
+
+        @include respond(tab-land) {// width <1200px
+            top:3em;
+            right:-2em;
+        }
+      
+        @include respond(tab-port) { // width <900px
+            top:11.5em;
+            right:-1em;  
+        }
+
+        @include respond(phone) { // width <600px
+            top:11.5em;
+            right:-1em;  
+        }
+      
+        @include respond(big-desktop) {
+            top:-3em;
+            right:-1em;
+         
+        } 
+    
+
+    }
+
+    &__image-loop {
+        width:40vw;
+
+
+       
+    
+    }
+   
+} 

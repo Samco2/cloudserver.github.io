@@ -1,0 +1,63 @@
+.square {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    background: #0714d7;
+    margin: 1rem 0 -1rem;
+}
+
+
+.line {
+    line-height: .8rem;
+    margin-top: -7rem;
+    &-1{
+        width: 1.5rem;
+        height: 15px;
+        margin-top: 1rem;
+        background: #0714d7;
+        display: inline-block;
+    }
+
+    &-2{
+        width: 8rem;
+        height: .1rem;
+        background:#0714d7;
+        display: inline-block;
+    }
+
+    &-3{
+        width: 6rem;
+        height: .1rem;
+        background: #0714d7;;
+        display: inline-block;
+    }
+}
+
+.u-center-text {text-align: right;}
+.h-center-text {text-align: center;}
+
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem !important; 
+}
+.u-margin-top {
+    margin-top: 1rem !important; 
+}
+
+form {
+    max-width:45rem;
+    margin: 3rem 0;
+
+    input{
+        width: 100%;
+        padding: 1.2rem 1rem;
+        margin-bottom: 0.5rem;
+        outline: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        border: .2rem solid rgba(8, 12, 73, 0.1);
+
+    }
+}
+
