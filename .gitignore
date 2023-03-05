@@ -2,4 +2,7 @@
 node_modules/
 dist/
 .cache/
-.sass
+sass
+.vscode
+js
+.scss
