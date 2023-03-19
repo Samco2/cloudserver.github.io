@@ -1,0 +1,24 @@
+{
+  "name": "tiaco",
+  "version": "1.0.0",
+  "description": "cloud",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samco2/tiaco.git"
+  },
+  "author": "samco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samco2/tiaco/issues"
+  },
+  "homepage": "https://github.com/Samco2/tiaco#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
