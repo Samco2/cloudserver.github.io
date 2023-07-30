@@ -50,7 +50,7 @@
 
 
 
-  <header class="header" id="home">
+  <header class="header mb-4" id="home">
 
 
     <div class="header__text">
@@ -72,7 +72,15 @@
 
   <main>
     <!--About us page-->
-    <section class="about" id="about">
+    <div class="about_section site-pad" id="about_section">
+      <div class="container">
+
+        <div class="u-center-text mb-4 aos-init aos-animate" id="about" data-aos="fade">
+          <h2 class="about_section-title">Exciting Cloud Platform</h2>
+        </div>
+      </div>
+    </div>
+    <section class="about">
       <div class="about__left-col composition" data-aos="fade-up">
 
         <img src="img/abt@2x.jpg" alt="our cloud image" class="composition__photo--p">
@@ -84,15 +92,13 @@
 
       <div class="about__right-col">
         <div class="about__text">
-          <h1>Exciting Cloud Platform</h1>
-          <br /><br />
           <p>
             Welcome to our cloud hosting company! We are a team of dedicated professionals who are passionate about
             providing reliable and efficient hosting solutions to businesses of all sizes.
 
 
           </p>
-          <br /><br />
+
           <p>----Tiaco; top notch</p>
         </div>
       </div>
@@ -278,7 +284,72 @@
   </section>
 
 
-  <!--section-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-3-of-4">
+          <div class="row">
+            <div class="col-2-of-4">
+              <h2 class="footer-heading u-margin-bottom-small">About Us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam
+                voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+            <div class="col-1-of-4 ml-auto">
+              <h2 class="footer-heading u-margin-bottom-small">Quick Links</h2>
+              <ul class="style">
+                <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
+                <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-1-of-4">
+              <h2 class="footer-heading u-margin-bottom-small">Follow Us</h2>
+              <a href="#"><img src="img/facebook.png" class="team-mate-icon"></a>
+              <a href="#"><img src="img/twitter.png" class="team-mate-icon"></a>
+              <a href="#"><img src="img/linkedin.png" class="team-mate-icon"></a>
+              <a href="#"><img src="img/instagram.png" class="team-mate-icon"></a>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <h2 class="footer-heading u-margin-bottom-small">Subscribe Newsletter</h2>
+          <form action="#" method="post" class="footer-subscribe">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control form-group border-secondary text-white bg-transparent"
+                placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5 align u-center-text">
+        <div class="align">
+          <div class="border-top pt-3">
+            <p>
+
+              Copyright ©2023 All rights reserved | This
+              template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#">Samco</a>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+  <!--section
   <section class="footer">
     <div class="container footer-row">
       <hr>
@@ -329,7 +400,7 @@
       </div>
     </div>
 
-  </section>
+  </section>-->
 
 
 

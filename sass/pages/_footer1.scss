@@ -102,3 +102,85 @@
     flex-basis: 40%;
 
 }
+
+.h-entry{
+
+    img{
+        margin-bottom: 3rem;
+        vertical-align: middle;
+        border-style: none;
+    }
+    h2{
+        font-size:2rem;
+        text-decoration: none;
+
+
+        a{
+            text-decoration: none;
+            color: $color-black;
+            background-color: transparent;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            
+        }
+    }
+    .meta{
+        color: $color-light;
+        font-size: 1.5rem;
+    }
+}
+.form{
+    color:$color-black;
+    font-size:1.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem !important;
+    font-family: "Work Sans";
+    
+    &-label{
+        color: $color-black;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        box-shadow: border-box;
+        
+    }
+
+
+
+}
+
+.card{
+    background: #fff;
+    padding: 30px;
+    
+    .price{
+        
+        span{
+            color:#cccccc;
+
+            span{
+                font-size:3rem;
+                color:$color-primary
+            }
+        }
+    }
+
+    ul{
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 50px;
+
+        li{
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            font-size: 1.2rem;
+        }
+
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
