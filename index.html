@@ -1,317 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Safe and scure cloud website/platform." />
-    <meta
-      property="og:title"
-      content="Tiaco - Deploy your websites and store your data in a safe platform."
-    />
-    <meta
-      property="og:description"
-      content="Tiaco is an imaginary web-hosting and version control platform. It's designed showcase the skill acquire through HTLM and CSS classes. To practice how build website from scratch."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://tiaco.corg/tiaco.jpg" />
-    <meta property="og:url" content="http://tiaco.org" />
-    <title>Tiaco | Cloud hosting Platform</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <!--Navigation-->
-    <nav class="nav">
-      <div class="nav__box">
-        <img src="img/tiaco.jpg" alt="Tiaco Logo" class="nav__box-logo" />
-      </div>
-      <label for="" class="logo">Tiaco</label>
-        <ul class="nav__list">
-          <li class="nav__li"><a class="active" href="#" >Home</a></li>
-          <li class="nav__li"><a href="#">About</a></li>
-          <li class="nav__li"><a href="#">Services</a></li>
-          <li class="nav__li"><a href="#">Contact</a></li>
-          <li class="nav__li"><a href="#">Feedback</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Safe and scure cloud website/platform." />
+  <meta property="og:title" content="Tiaco - Deploy your websites and store your data in a safe platform." />
+  <meta property="og:description"
+    content="Tiaco is an imaginary web-hosting and version control platform. It's designed showcase the skill acquire through HTLM and CSS classes. To practice how build website from scratch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://tiaco.corg/tiaco.jpg" />
+  <meta property="og:url" content="http://tiaco.org" />
+  <title>Tiaco | Cloud hosting Platform</title>
+  <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav class="nav">
+    <div class="nav__box">
+      <img src="img/tiaco.jpg" alt="Tiaco Logo" class="nav__box-logo" />
+    </div>
+    <label for="" class="logo"></label>
+    <ul class="nav__list" id="arrow-up">
+      <li class="nav__li"><a class="active" href="#home">Home</a></li>
+      <li class="nav__li"><a href="#about">About</a></li>
+      <li class="nav__li"><a href="#features">Services</a></li>
+      <li class="nav__li"><a href="#contact">Contact</a></li>
+      <li class="nav__li"><a href="#feedback">Feedback</a></li>
+    </ul>
 
 
-        <label id="icon" >
-          <i for="navi-toggle" class="nav__button">
-            <span class="nav__icon">&nbsp;</span>
-          </i>
-        </label>
-    </nav>
-    
+    <label id="icon">
+      <i for="navi-toggle" class="nav__button">
+        <span class="nav__icon">&nbsp;</span>
+      </i>
+    </label>
+  </nav>
 
 
 
-    <header class="header">
-      
 
-      <div class="header__text">
-        <h1 class="header__text-major">secure and safe clouding</h1>
-        <p class="header__text-minor">Secure your data at zero cost.</p>
-        <a href="#">
-          <button class="btn">Join Us</button>
-        </a>
-      </div>
-      <picture class="header__image" data-aos="zoom-in-up"
-        >
-        <source
-        type="image/webp"
-        srcset="img/banner.webp 1x, img/banner@2x.webp 2x"
-      />
-      <source
-      type="image/png"
-      srcset="img/banner.png 1x, img/banner@2x.png 2x"
-    />
-        
-        
-        
-        <img src="../img/banner@2x.webp" class="header__image-loop"
-      /></picture>
-    </header>
+  <header class="header" id="home">
 
-    <main>
-      <!--About us page-->
-      <section class="about">
-        <div class="about__left-col">
-          <div class="composition" data-aos="fade-up">
-        <img src="../img/abt@2x.jpg" alt="our cloud image" class="composition__photo--p1">
-            
-            <img src="/img/about12@2x.jpg" alt="our cloud image2" class="composition__photo--p2">
-            <img src="/img/about@2x.jpg" alt="our cloud image3" class="composition__photo--p3">
-          </div>
-        </div>
 
-        <div class="about__right-col">
-          <div class="about__text">
-            <h2>Exciting Cloud Platform</h2>
-            <span class="square"></span>
-            <p>
-              We are best in version control service, Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Et fuga, nesciunt eligendi minu
-            </p>
-            <br /><br />
-            <div class="line">
-              <span class="line-1"></span><br />
-              <span class="line-2"></span><br />
-              <span class="line-3"></span>
-            </div>
-            <h3>
-              "Chioce of Scure and safe cloud is not attained by chanve, it must
-              be sought for with ardor, diligent and attended to with high
-              degree of commitment"
-            </h3>
-            <h5>----Tiaco; top notch</h3>
-          </div>
-        </div>
-      </section>
-      <!--features-->
-      <section class="features" data-aos="fade-up">
-        <div class="features__row">
-          <div class="features__row-col">
-            <img src="/../img/bulb.png" alt="cloud anywhere" />
-            <h4>Cloud Anywhere</h4>
-            <p>switching between your local repo to remote</p>
-          </div>
-          <div class="features__row-col">
-            <img src="/../img/pic-2.png" alt="cloud anywhere" />
-            <h4>Professionalism</h4>
-            <p>
-              Join the leaque of experts who are passionate rendering services.
-            </p>
-          </div>
-          <div class="features__row-col">
-            <img src="/../img/rocket.png" alt="cloud anywhere" />
-            <h4>Always Active</h4>
-            <p>switching between your local repo to remote</p>
-          </div>
-        </div>
-        <div class="features-btn">
-          <div class="line">
-            <span class="line-1"></span><br />
-            <span class="line-2"></span><br />
-            <span class="line-3"></span>
-          </div>
-          <a href="#">
-            <button class="btn">Start free Trials</button>
-          </a>
-        </div>
-      </section>
-    </main>
+    <div class="header__text">
+      <h1 class="header__text-major">Secure and Safe Clouding</h1>
+      <p class="header__text-minor">Secure your data at zero cost.</p>
+      <a href="#">
+        <button class="btn">Join Us</button>
+      </a>
+    </div>
+    <picture class="header__image" data-aos="zoom-in-up">
+      <source type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x" />
+      <source type="image/png" srcset="img/banner.png 1x, img/banner@2x.png 2x" />
 
-    <section class="section-feedback">
-      <div class="tiaco-video">
-        <video class="tiaco-video__content" autoplay muted loop>
-          <source src="img/video.mp4" type="vidoe/mp4" />
-          <source src="img/video.webm" type="video/webm" />
-          Your browser is not supported!
-        </video>
-      </div>
-      <div class="h-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Making clouding scure and friendly</h2>
+
+
+
+    </picture>
+  </header>
+
+  <main>
+    <!--About us page-->
+    <section class="about" id="about">
+      <div class="about__left-col composition" data-aos="fade-up">
+
+        <img src="img/abt@2x.jpg" alt="our cloud image" class="composition__photo--p">
+
+        <img src="img/about12@2x.jpg" alt="our cloud image2" class="composition__photo--p">
+        <img src="img/about@2x.jpg" alt="our cloud image3" class="composition__photo--p">
+
       </div>
 
-      <div class="row">
-        <div class="feedback">
-          <figure class="feedback__shape">
+      <div class="about__right-col">
+        <div class="about__text">
+          <h1>Exciting Cloud Platform</h1>
+          <br /><br />
+          <p>
+            Welcome to our cloud hosting company! We are a team of dedicated professionals who are passionate about
+            providing reliable and efficient hosting solutions to businesses of all sizes.
 
 
-            <img
-            srcset="img/background1x.jpg 300w, img/background2x.jpg 1000w"
-            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Marry Janet photo"
-            class="feedback__img"
-            src="img/background2x.jpg"
-          />
-            <figcaption class="feedback__caption">Mary Janet</figcaption>
-          </figure>
-          <div class="feedback__text">
-            <h3 class="heading-tertiary">Mary Janet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-              iure error explicabo expedita earum eum! Omnis harum aut ipsum
-              quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Dicta iure error explicabo expedita earum eum! Omnis harum
-              aut ipsum quisquam?
-            </p>
-
-            <div class="u-center-text u-margin-top">
-              <a href="#" class="feedback-btn">Read More &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="feedback">
-          <figure class="feedback__shape">
-
-
-            <img
-            srcset="img/background1@1x.webp 300w, img/background2@2x.jpg 1000w"
-            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-            alt="Dr. Rheson Raphael photo"
-            class="feedback__img"
-            src="img/background2@2x.jpg"
-          />
-
-          
-
-            <figcaption class="feedback__caption">
-              Dr. Rheson Raphael
-            </figcaption>
-          </figure>
-          <div class="feedback__text">
-            <h3 class="heading-tertiary">Dr. Rheson Raphael</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-              iure error explicabo expedita earum eum! Omnis harum aut ipsum
-              quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Dicta iure error explicabo expedita earum eum! Omnis harum
-              aut ipsum quisquam?
-            </p>
-
-            <div class="u-center-text u-margin-top">
-              <a href="#" class="feedback-btn">Read More &rarr;</a>
-            </div>
-          </div>
+          </p>
+          <br /><br />
+          <p>----Tiaco; top notch</p>
         </div>
       </div>
     </section>
+    <!--features-->
+    <section class="features" data-aos="fade-up" id="features">
+      <div class="features__row">
+        <div class="features__row-col">
+          <img class="prof" src="img/globe.jpg" alt="cloud anywhere" />
+          <h3>Clousd everywhere</h3>
+          <p>
+            From local repo to remote.
+          </p>
+        </div>
+        <div class="features__row-col">
+          <img class="prof" src="img/bulb.jpg" alt="cloud anywhere" />
+          <h3>Professionalism</h3>
+          <p>
+            Professionalism is in our DNA.
+          </p>
+        </div>
+        <div class="features__row-col">
+          <img class="prof" src="img/rocket.jpg" alt="cloud anywhere" />
+          <h3>99% SLA</h3>
+          <p>Cloud in the moon</p>
+        </div>
+      </div>
+      <!--<div class="features-btn">
 
-    <!--User Input-->
-    <section class="contact">
-      <div class="contact__row container">
-        <div class="contact__left-col">
+        <a href="#">
+          <button class="btn">Start free Trials</button>
+        </a>
+      </div>-->
+    </section>
+  </main>
+
+  <!--User input-->
+  <section class="contact" id="contact">
+    <div class="contact__row container">
+      <div class="contact__left-col">
+        <div class="contact__left-col-items">
           <h3>
-            Sign Up to join our <br />
+            Sign up to join our
             cloud community
           </h3>
-          <form class="form">
-            <input type="text" placeholder="Enter Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="password" />
-            <div class="form__btn-box">
-              <button class="btn">Sign Up</button>
-              <button class="btn">Free Trial</button>
+          <form action="#" class="form">
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Full name" id="name" required />
+              <label for="name" class="form__lable">Full name</label>
+            </div>
+            <div class="form__group">
+              <input type="email" class="form__input" placeholder="Email" id="email" required />
+              <label for="email" class="form__lable">Email</label>
+            </div>
+            <div class="form__group">
+              <input type="password" class="form__input" placeholder="password" id="password" />
+              <label for="password" class="form__lable">Password</label>
+            </div>
+            <div class="form__btn-box contact__left-col-btn">
+              <button class="btn">Sign up</button>
+              <button class="btn">Free trial</button>
             </div>
           </form>
         </div>
-        <div class="contact__right-col">
-          <img src="img/wordpress@2x.webp" alt="" class="" />
-        </div>
-        <div class="line contact__line">
-          <span class="line-1"></span><br />
-          <span class="line-2"></span><br />
-          <span class="line-3"></span>
-        </div>
       </div>
-    </section>
-
-    <!--footer-->
-    <section class="footer">
-      <div class="container footer__row footer__text">
-        <hr />
-        <div class="footer__left-col">
-          <div class="footer__links">
-            <div class="footer__text-title">
-              <h5>Product</h5>
-              <small>our plan</small> <br />
-              <small>Free Trial</small>
-            </div>
-
-            <div class="footer__text-title">
-              <h5>About us</h5>
-              <small>Download our Cli</small> <br />
-              <small>FAQs</small>
-            </div>
-
-            <div class="footer__text-title">
-              <h5>support</h5>
-              <small>Feature</small> <br />
-              <small>Contact us</small>
-            </div>
-
-            <div class="footer__text-title">
-              <h5>Explore</h5>
-              <small>Find a nonprofit</small><br />
-              <small>Coporate Solutions</small>
-            </div>
-          </div>
-        </div>
-        <div class="footer__right-col">
-          <div class="footer__info">
-            <div class="copyright-text">
-              <small class="">support@tiaco.org</small><br />
-              <small class="">copyright &copy; 2023 by Samuel Adeyemi</small>
-            </div>
-
-            <div class="footer__logo">
-              <img src="img/tiaco1@.jpg" alt="tiaco logo" />
-            </div>
-          </div>
-        </div>
+      <div class="contact__right-col">
+        <img src="img/wordpress@2x.png" alt="" class="contact-pic" />
       </div>
-    </section>
-    <!--Social icon-->
-    <div class="social-icons">
-      <img src="img/facebook.png">
-      <img src="img/instagram.png">
-      <img src="img/twitter.png">
-      <img src="img/linkedin.png">
+    </div>
+  </section>
+
+
+  <section class="section-feedback" id="feedback">
+    <div class="tiaco-video">
+      <video class="tiaco-video__content" autoplay muted loop>
+        <source src="img/video.mp4" type="vidoe/mp4" />
+        <source src="img/video.webm" type="video/webm" />
+        Your browser is not supported!
+      </video>
+    </div>
+    <div class="h-center-text u-margin-bottom-big">
+      <h2 class="heading-secondary">Making clouding secure and friendly</h2>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    <div class="row">
+      <div class="feedback">
+        <figure class="feedback__shape">
+          <img srcset="img/mary.png 300w, img/mary.png 1000w"
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Mary Janet photo"
+            class="feedback__img" src="img/mary.png" />
+          <figcaption class="feedback__caption">Mary Janet</figcaption>
+        </figure>
+        <div class="feedback__text">
+          <h3 class="heading-tertiary">Mary Janet</h3>
+          <p>
+            I have been using this cloud hosting company for my business for the past year, and I must say, I am
+            thoroughly impressed with their service. The uptime is exceptional, and the speed and performance are
+            top-notch.
+          </p>
+
+          <!--<div class="u-center-text u-margin-top">
+            <a href="#" class="feedback-btn">Read More &rarr;</a>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="feedback">
+        <figure class="feedback__shape">
+
+
+          <img srcset="img/dr@1x.png 300w, img/dr@1x.png 1000w"
+            size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Dr. Rheson Raphael photo"
+            class="feedback__img" src="img/dr@1x.png" />
+
+
+
+          <figcaption class="feedback__caption">
+            Dr. Rheson Raphael
+          </figcaption>
+        </figure>
+        <div class="feedback__text">
+          <h3 class="heading-tertiary">Dr. Rheson Raphael</h3>
+          <p>
+            I highly recommend this cloud hosting company to anyone looking for a reliable and efficient hosting
+            solution. They have exceeded my expectations in every way, and their services are top-notch.
+          </p>
+
+          <!--<div class="u-center-text u-margin-top">
+            <a href="#" class="feedback-btn">Read More &rarr;</a>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--section-->
+  <section class="footer">
+    <div class="container footer-row">
+      <hr>
+      <div class="footer-left-col">
+        <div class="footer-left-col__links">
+          <div class="footer-left-col__links-text">
+            <h4>Product</h4>
+            <small>our plan</small> <br />
+            <small>Free Trial</small>
+          </div>
+
+          <div class="footer-left-col__links-text">
+            <h4>About us</h4>
+            <small>Download our Cli</small> <br />
+            <small>FAQs</small>
+          </div>
+
+          <div class="footer-left-col__links-text">
+            <h4>Support</h4>
+            <small>Feature</small> <br />
+            <small>Contact us</small>
+          </div>
+
+          <div class="footer-left-col__links-text">
+            <h4>Explore</h4>
+            <small>Find a nonprofit</small><br />
+            <small>Coporate Solutions</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer__info">
+          <div class="footer__info-copyright">
+            <small class="">support@tiaco.org</small><br />
+            <small class="">copyright &copy; 2023 by Samuel Adeyemi</small>
+          </div>
+
+          <div class="footer__info-logo">
+            <img src="img/tiaco.jpg" alt="tiaco logo" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__info-icons">
+        <img src="img/facebook.png">
+        <img src="img/instagram.png">
+        <img src="img/twitter.png">
+        <img src="img/linkedin.png">
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!--Social icon-->
+  <div class="social-icons">
+    <a href="#arrow-up"><img src="img/up-arrow.png"></a>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
