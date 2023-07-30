@@ -237,8 +237,8 @@ p {
 .heading-secondary {
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #fff, #fff);
-  color: transparent;
+  /*background-image: linear-gradient(to right, #fff, #fff);
+  color: transparent;*/
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
