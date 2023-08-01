@@ -284,6 +284,7 @@ $breakpoint arguement choices:
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media (max-width: 75em) {
   html {
@@ -1237,6 +1238,11 @@ form.col {
     font-size: 4rem;
   }
 }
+@media (max-width: 37.5em) {
+  .card {
+    height: 80%;
+  }
+}
 
 .header {
   height: 100vh;
@@ -1249,6 +1255,11 @@ form.col {
   .header {
     height: 70vh;
     background-image: linear-gradient(to right bottom, rgba(34, 4, 186, 0.3019607843), #02091e), url(../img/background12x.jpg);
+  }
+}
+@media (max-width: 56.25em) {
+  .header {
+    height: 60vh;
   }
 }
 @media (max-width: 37.5em) {
@@ -1272,6 +1283,11 @@ form.col {
   left: 2rem;
   text-align: center;
   color: #fff;
+}
+@media (max-width: 56.25em) {
+  .header__text {
+    top: 10em;
+  }
 }
 @media (max-width: 37.5em) {
   .header__text {
