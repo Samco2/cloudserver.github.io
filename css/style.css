@@ -114,8 +114,8 @@ $breakpoint arguement choices:
 }
 @media (max-width: 56.25em) {
   .composition__photo--p {
-    left: 17rem;
-    top: 5rem;
+    left: 5rem;
+    top: 3rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -1203,10 +1203,11 @@ form.col {
 }
 @media (max-width: 56.25em) {
   .card {
-    height: auto;
+    height: 90%;
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 1.5rem 4rem rgba(33, 28, 60, 0.15);
+    width: 85%;
   }
   .card__side {
     height: auto;
@@ -1286,7 +1287,7 @@ form.col {
 }
 @media (max-width: 56.25em) {
   .header__text {
-    top: 10em;
+    top: 3em;
   }
 }
 @media (max-width: 37.5em) {
@@ -1708,6 +1709,11 @@ span {
 .about__left-col img {
   width: 50%;
   margin-top: 0;
+}
+@media (max-width: 56.25em) {
+  .about__left-col img {
+    width: 85%;
+  }
 }
 @media (max-width: 37.5em) {
   .about__left-col img {
