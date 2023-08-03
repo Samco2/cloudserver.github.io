@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
   <!--Navigation-->
   <nav class="nav">
     <div class="nav__box">
@@ -35,6 +36,7 @@
       <li class="nav__li"><a class="active" href="#home">Home</a></li>
       <li class="nav__li"><a href="#about">About</a></li>
       <li class="nav__li"><a href="#features">Services</a></li>
+      <li class="nav__li" -sub><a href="#pricing-section">Pricing</a>
       <li class="nav__li"><a href="#contact">Contact</a></li>
       <li class="nav__li"><a href="#feedback">Feedback</a></li>
     </ul>
@@ -45,6 +47,18 @@
         <span class="nav__icon">&nbsp;</span>
       </i>
     </label>
+
+    <span id="sideNav">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Services</a></li>
+        <li><a href="#pricing-section">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+
+    </span>
   </nav>
 
 
@@ -93,7 +107,8 @@
       <div class="about__right-col">
         <div class="about__text">
           <p>
-            Welcome to our cloud hosting company! We are a team of dedicated professional who are passionate about
+            Welcome to our cloud hosting company! We are a team of dedicated professional
+            <br> who are passionate about
             providing reliable and efficient hosting solutions to businesses of all sizes.
 
 
@@ -423,6 +438,22 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    var menuBtn = document.getElementById("icon");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    icon.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      }
+      else {
+        sideNav.style.right = "-250px";
+      }
+    }
+
   </script>
 
 

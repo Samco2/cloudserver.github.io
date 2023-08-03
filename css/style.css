@@ -154,7 +154,7 @@ $breakpoint arguement choices:
 }
 .comp__photo {
   width: 90%;
-  border-radius: 2srem;
+  border-radius: 2rem;
   float: right;
   max-width: 100%;
   height: auto;
@@ -293,7 +293,7 @@ html {
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
 }
 @media (max-width: 29em) {
@@ -1429,6 +1429,9 @@ form.col {
 }
 .nav a:hover {
   border: 0.1rem solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   transition: 0.5s;
 }
 .nav__icon {
@@ -1456,23 +1459,25 @@ form.col {
 }
 
 #icon {
-  color: white;
-  font-size: 3rem;
-  line-height: 8rem;
-  float: right;
-  margin-right: 4rem;
-  cursor: pointer;
-  margin-top: 1rem;
   display: none;
 }
 @media (max-width: 56.25em) {
   #icon {
-    display: block;
+    display: block !important;
+    color: white;
+    font-size: 3rem;
+    line-height: 8rem;
+    float: right;
+    margin-right: 4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    z-index: 6000;
   }
 }
 
 a.active {
   border: 0.1rem solid white;
+  border: none;
   /*@media(max-width: 90.9rem){
       border: none;
       color: #3498db;
@@ -1486,6 +1491,43 @@ a.active {
   color: white;
   padding: 0 10rem;
   line-height: 8rem;
+}
+
+#sideNav {
+  display: none;
+}
+@media (max-width: 56.25em) {
+  #sideNav {
+    display: block !important;
+    width: 14rem;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgba(2, 9, 30, 0.5);
+    z-index: 2;
+    transition: 5s;
+  }
+}
+@media (max-width: 56.25em) and (max-width: 29em) {
+  #sideNav {
+    width: 12rem;
+    font-size: 100%;
+  }
+}
+
+span {
+  display: none;
+}
+@media (max-width: 56.25em) {
+  span ul li {
+    list-style: None;
+    margin: 50px 20px !important;
+  }
+  span ul li a {
+    text-decoration: none;
+    color: #333;
+  }
 }
 
 .nav-row {
